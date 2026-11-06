@@ -1,0 +1,17 @@
+{
+  "_doc": "Décorations de l'atelier (GDD 02-progression) : 12 objets cosmétiques (dont 4 de prestige au rang 5, à finir avec l'Atelier libre et le défi du jour), sans effet de jeu. price = crédits ; rank = rang minimum pour l'acheter. Dessinés au comptoir (js/deco.js).",
+  "list": [
+    { "id": "lamp",          "price": 100,  "rank": 1 },
+    { "id": "plant",         "price": 150,  "rank": 1 },
+    { "id": "poster",        "price": 200,  "rank": 2 },
+    { "id": "rug",           "price": 300,  "rank": 2 },
+    { "id": "hanging_drone", "price": 400,  "rank": 3 },
+    { "id": "aquarium",      "price": 600,  "rank": 3 },
+    { "id": "neon_sign",     "price": 800,  "rank": 4 },
+    { "id": "gear_clock",    "price": 1000, "rank": 4 },
+    { "id": "polaroids",     "price": 1000, "rank": 5 },
+    { "id": "rare_showcase", "price": 1200, "rank": 5 },
+    { "id": "firefly_jar",   "price": 1300, "rank": 5 },
+    { "id": "robot",         "price": 1500, "rank": 5 }
+  ]
+}

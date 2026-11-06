@@ -1,0 +1,34 @@
+{
+  "lang": "fr",
+  "name": "Pico-Clinic — le Micro-Chirurgien de Drones",
+  "short_name": "Pico-Clinic",
+  "description": "Répare drones, insectes cybernétiques et mascottes mécaniques du bout du doigt : dévisse, soude, change les puces et fais redémarrer tes petits patients.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4e9d8",
+  "theme_color": "#f4e9d8",
+  "categories": [
+    "games"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

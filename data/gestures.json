@@ -1,0 +1,170 @@
+{
+  "unscrew": {
+    "screw_radius": 44,
+    "turns": 1.5,
+    "turns_rusty": 3,
+    "slip_factor": 2.2,
+    "grab_factor": 2.0,
+    "slip_cleanliness": 5
+  },
+  "connector": {
+    "snap_radius": 24,
+    "grab_radius": 95,
+    "lift_offset": 90
+  },
+  "lever": {
+    "travel": 380,
+    "validate": 0.7
+  },
+  "solder": {
+    "tolerance_by_rank": [
+      36,
+      32,
+      28,
+      25,
+      21
+    ],
+    "heat_time": 1.2,
+    "speed_min": 80,
+    "speed_max": 240,
+    "off_path_time": 0.15,
+    "burn_time": 0.6,
+    "grab_radius": 110,
+    "grip": [
+      65,
+      130
+    ],
+    "cell": 8
+  },
+  "chip": {
+    "snap_radius": 36,
+    "grab_pad": 30,
+    "lift_offset": 120
+  },
+  "vacuum": {
+    "radius": 28,
+    "min_speed": 110,
+    "rate": 0.02,
+    "cell": 20,
+    "fragile_grace": 0.45,
+    "fragile_warn_cooldown": 1.2,
+    "offset_y": 150,
+    "fragile_hit": 0.7
+  },
+  "magnifier": {
+    "radius": 125,
+    "zoom": 1.7,
+    "offset_y": 190,
+    "catch_radius": 70,
+    "hold": 0.4,
+    "hint_after": 20,
+    "time_per_fault": 4
+  },
+  "scoring": {
+    "clean_min": 80,
+    "precise_min": 85,
+    "tip_ratio": 0.25,
+    "capacitor_cost": 5, "capacitor_cost_by_rank": [5, 8, 12, 20, 30]
+  },
+  "capacitor": {
+    "grab_pad": 30,
+    "grab_radius": 80,
+    "lift_offset": 110,
+    "snap_radius": 40
+  },
+  "battery": {
+    "speed_max": 340,
+    "risk_rise": 1.8,
+    "risk_fall": 0.7,
+    "edge_tol": 26,
+    "max_dev": 55,
+    "edge_cost": 4,
+    "edge_cooldown": 0.8,
+    "risk_cost": 10,
+    "grab_pad": 40
+  },
+  "gear": {
+    "tolerance": 20,
+    "attempts_hint": 3,
+    "snap_radius": 60,
+    "grab_pad": 40,
+    "zone": 330,
+    "lift_offset": 100
+  },
+  "sensor": {
+    "zone": 0.12,
+    "hold": 0.8,
+    "knob_grab": 85
+  },
+  "pins": {
+    "tolerance": 6,
+    "grab": 70,
+    "count": 3
+  },
+  "spring": {
+    "turns": 3,
+    "speed_min": 0.35,
+    "speed_max": 1.6,
+    "risk_rise": 1.5,
+    "risk_fall": 0.8,
+    "risk_cost": 6
+  },
+  "batteries": {
+    "snap_radius": 36,
+    "grab_pad": 30,
+    "lift_offset": 110,
+    "rub_radius": 60,
+    "rate": 0.035,
+    "min_speed": 90,
+    "cell": 44,
+    "clean_min": 0.9
+  },
+  "oxide": {
+    "radius": 26,
+    "offset_y": 130,
+    "rate": 0.03,
+    "min_speed": 60,
+    "cell": 22,
+    "clean_min": 0.9,
+    "cost": 3,
+    "repeat": 0.6,
+    "break_hits": 3
+  },
+  "heart": {
+    "zip_grab": 90,
+    "zip_tol": 120,
+    "period": 1.0,
+    "window": 0.16,
+    "beats": 6,
+    "spam": 0.35,
+    "spam_cost": 3
+  },
+  "clips": {
+    "hold": 0.5,
+    "push": 70,
+    "early": 26,
+    "grab": 80,
+    "door_swipe": 170,
+    "bend_cost": 5,
+    "break_cost": 10
+  },
+  "seam": {
+    "holes_by_rank": [6, 6, 8, 9, 10],
+    "tolerance": 60,
+    "slip_time": 0.2,
+    "slip_cost": 2,
+    "pull_fall": 1.2
+  },
+  "key": {
+    "turns": 3,
+    "green_start": 0.6,
+    "green_by_rank": [0.14, 0.14, 0.14, 0.1, 0.1],
+    "red": 0.93,
+    "red_cost": 5
+  },
+  "train": {
+    "teeth": [6, 8, 10, 12, 14],
+    "pitch": 56,
+    "snap_radius": 70
+  }
+}

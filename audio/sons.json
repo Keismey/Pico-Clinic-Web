@@ -1,0 +1,8 @@
+{
+  "_doc": "Liste des fichiers MP3 présents dans ce dossier (nom sans .mp3). Un son absent de la liste est fabriqué en code. loops : début et fin de la boucle en secondes (l'intro avant le début ne se joue qu'une fois). Voir LISEZMOI.md.",
+  "files": ["music_workshop", "music_op"],
+  "loops": {
+    "music_workshop": [5.782, 107.452],
+    "music_op": [11.343, 167.0722]
+  }
+}

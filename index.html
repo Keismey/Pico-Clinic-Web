@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#f4e9d8">
+<title>Pico-Clinic</title>
+<meta name="description" content="Répare drones, insectes cybernétiques et mascottes mécaniques du bout du doigt.">
+<link rel="icon" type="image/png" href="icons/favicon.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Pico-Clinic">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Keismey Studio">
+<meta property="og:title" content="Pico-Clinic">
+<meta property="og:description" content="Dévisse, soude et change les puces : soigne drones, insectes mécaniques et peluches robots, et reprends l’atelier de Maître Ohm. Gratuit, sans pub, dans le navigateur.">
+<meta property="og:url" content="https://keismey.github.io/Pico-Clinic-Web/">
+<meta property="og:image" content="https://keismey.github.io/Pico-Clinic-Web/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pico-Clinic · Keismey Studio">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pico-Clinic">
+<meta name="twitter:description" content="Dévisse, soude et change les puces : soigne drones, insectes mécaniques et peluches robots, et reprends l’atelier de Maître Ohm. Gratuit, sans pub, dans le navigateur.">
+<meta name="twitter:image" content="https://keismey.github.io/Pico-Clinic-Web/og.jpg">
+<link rel="manifest" id="manifest" href="manifest.webmanifest">
+<script>
+  // fiche d'installation en anglais si le jeu est en anglais (lien ?lang=, choix mémorisé ou langue du téléphone)
+  (function () {
+    var l = new URLSearchParams(location.search).get('lang');
+    try { l = l || (JSON.parse(localStorage.getItem('pico_save_v1') || '{}').settings || {}).lang; } catch (e) {}
+    l = l || ((navigator.language || 'en').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en');
+    if (l === 'en') document.getElementById('manifest').href = 'manifest-en.webmanifest';
+  })();
+</script>
+<style>
+  html, body {
+    margin: 0; height: 100%; overflow: hidden;
+    -webkit-user-select: none; user-select: none;
+    -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent;
+  }
+  /* fond noir pendant le logo du studio, puis beige en fondu (bandes autour du jeu) */
+  body { display: flex; align-items: center; justify-content: center; background: #e9dcc6; transition: background-color .7s; }
+  body.noir { background: #000; }
+  canvas { display: block; touch-action: none; }
+  #loading { position: fixed; font: 600 18px system-ui, sans-serif; color: #6b5a4a; }
+  /* téléphone tourné : le jeu (en portrait) serait minuscule, on demande de le redresser (même règle dans js/main.js) */
+  #rotate { display: none; }
+  @media (orientation: landscape) and (max-height: 600px) and (pointer: coarse) {
+    #rotate {
+      display: flex; position: fixed; inset: 0; z-index: 2147482000; flex-direction: column; gap: 16px;
+      align-items: center; justify-content: center; padding: 24px; text-align: center;
+      background: #f4e9d8; color: #3a2a1e; font: 700 20px system-ui, sans-serif;
+    }
+  }
+  #rotate svg { width: 64px; height: 64px; }
+  html:lang(en) #rotate .fr, html:not(:lang(en)) #rotate .en { display: none; }
+</style>
+</head>
+<body class="noir">
+<div id="loading">…</div>
+<div id="rotate" role="alert">
+  <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="20" y="6" width="24" height="44" rx="5" fill="none" stroke="#c47a3c" stroke-width="4"/><path d="M14 44a20 20 0 0 0 20 14" fill="none" stroke="#3a2a1e" stroke-width="4" stroke-linecap="round"/><path d="M30 52l5 6-7 3" fill="none" stroke="#3a2a1e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <p class="fr">Tourne ton téléphone en portrait pour jouer.</p>
+  <p class="en">Turn your phone upright to play.</p>
+</div>
+<canvas id="game" role="img" aria-label="Pico-Clinic"></canvas>
+<script src="commun/ks-studio.js"></script>
+<script src="commun/ks-back.js"></script>
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>

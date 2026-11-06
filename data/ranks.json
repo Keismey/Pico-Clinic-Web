@@ -1,0 +1,10 @@
+{
+  "_doc": "Rangs (GDD 02-progression, passage de rang). stars = étoiles cumulées nécessaires pour ouvrir la commande d'examen ; exam = numéro de la commande d'examen ; la réussir (même avec 1 étoile) donne le rang.",
+  "list": [
+    { "rank": 1, "stars": 0 },
+    { "rank": 2, "stars": 18, "exam": 10 },
+    { "rank": 3, "stars": 45, "exam": 22 },
+    { "rank": 4, "stars": 70, "exam": 34 },
+    { "rank": 5, "stars": 96, "exam": 46 }
+  ]
+}

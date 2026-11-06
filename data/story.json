@@ -1,0 +1,20 @@
+{
+  "_doc": "Scènes d'histoire (GDD 04-histoire, chapitres). chapter = carte de chapitre au début (titre : clés chapter.N.title et chapter.N.sub). backdrop = workshop (Gribouille sur le comptoir), notebook (le carnet de Maître Ohm), letter (la lettre de Maître Ohm sur le comptoir) ou ending (enseigne repeinte et tous les clients). speaker = qui parle dans les bulles (gribouille par défaut, ohm pour sa lettre ; étiquette = clé name.<speaker>). lines = bulles (clés de langue). credits = lignes du générique qui défile après les bulles (la première est le titre). Scène « chN » = ouverture du chapitre N, jouée après l'écran du nouveau rang N (ch1 : au tout premier lancement). after_order = scène jouée après la première réussite de la commande n. Scènes « daily » et « free » : Gribouille présente le Défi du jour (rang 3) et l'Atelier libre (rang 5), juste après le chapitre de ce rang, ou au premier appui sur leur bouton. Chaque scène n'est jouée qu'une fois (save.story).",
+  "scenes": {
+    "ch1": { "chapter": 1, "backdrop": "workshop", "lines": ["story.ch1.1", "story.ch1.2", "story.ch1.3", "story.ch1.4"] },
+    "notebook": { "backdrop": "notebook", "lines": ["story.nb.1", "story.nb.2", "story.nb.3"] },
+    "ch2": { "chapter": 2, "backdrop": "workshop", "lines": ["story.ch2.1", "story.ch2.2", "story.ch2.3", "story.ch2.4"] },
+    "ch3": { "chapter": 3, "backdrop": "workshop", "lines": ["story.ch3.1", "story.ch3.2", "story.ch3.3", "story.ch3.4"] },
+    "ch4": { "chapter": 4, "backdrop": "workshop", "lines": ["story.ch4.1", "story.ch4.2", "story.ch4.3", "story.ch4.4"] },
+    "ch5": { "chapter": 5, "backdrop": "workshop", "lines": ["story.ch5.1", "story.ch5.2", "story.ch5.3", "story.ch5.4"] },
+    "daily": { "backdrop": "workshop", "lines": ["story.daily.1", "story.daily.2", "story.daily.3", "story.daily.4"] },
+    "free": { "backdrop": "workshop", "lines": ["story.free.1", "story.free.2", "story.free.3", "story.free.4"] },
+    "letter": { "backdrop": "letter", "speaker": "ohm", "lines": ["story.letter.1", "story.letter.2", "story.letter.3", "story.letter.4"] },
+    "end": {
+      "backdrop": "ending",
+      "lines": ["story.end.1", "story.end.2"],
+      "credits": ["credits.title", "credits.1", "credits.2", "credits.3", "credits.4"]
+    }
+  },
+  "after_order": { "3": "notebook", "59": "letter", "60": "end" }
+}

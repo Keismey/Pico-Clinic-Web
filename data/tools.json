@@ -1,0 +1,23 @@
+{
+  "_doc": "Boutique (GDD 02-progression). levels[0] = outil de départ ; price = crédits ; rank = rang minimum. effect[k][niveau-1] modifie data/gestures.json pendant une réparation. driver : le cliquet demande moins de tours (turns_factor), la dévisseuse dévisse en maintenant le doigt sur la vis (hold_turns = tours par seconde), la visseuse turbo (niveau 4) dévisse seule après un simple toucher (tap_turns = tours par seconde, plusieurs vis à la fois). Aspirateur cyclone : même taille que la pompe (pour ne pas toucher les composants fragiles), mais rate_factor fois plus efficace. Niveaux 4 au rang 5 : achats de fin de jeu, à finir avec l'Atelier libre et le défi du jour.",
+  "iron": {
+    "levels": [{ "id": "iron" }, { "id": "iron_precision", "price": 150, "rank": 2 }, { "id": "laser", "price": 900, "rank": 4 }, { "id": "master_iron", "price": 2200, "rank": 5 }],
+    "effect": { "tolerance_bonus": [0, 8, 16, 24], "burn_factor": [1, 1.4, 1.8, 2.6] }
+  },
+  "vacuum": {
+    "levels": [{ "id": "vacuum" }, { "id": "vacuum_strong", "price": 150, "rank": 2 }, { "id": "vacuum_pump", "price": 900, "rank": 4 }, { "id": "cyclone_vacuum", "price": 1800, "rank": 5 }],
+    "effect": { "radius_factor": [1, 1.4, 1.9, 1.9], "rate_factor": [1, 1, 1, 2.5] }
+  },
+  "lens": {
+    "levels": [{ "id": "lens" }, { "id": "lens_thermal", "price": 200, "rank": 3 }, { "id": "scanner", "price": 1200, "rank": 5 }],
+    "effect": { "hold_factor": [1, 0.5, 0.5], "scan": [false, false, true] }
+  },
+  "driver": {
+    "levels": [{ "id": "screwdriver" }, { "id": "ratchet_driver", "price": 150, "rank": 2 }, { "id": "electric_driver", "price": 500, "rank": 4 }, { "id": "turbo_driver", "price": 2000, "rank": 5 }],
+    "effect": { "turns_factor": [1, 0.67, 1, 1], "hold_turns": [0, 0, 1.2, 0], "tap_turns": [0, 0, 0, 5] }
+  },
+  "tweezers": {
+    "levels": [{ "id": "tweezers" }, { "id": "tweezers_fine", "price": 120, "rank": 3 }, { "id": "tweezers_antistatic", "price": 700, "rank": 4 }],
+    "effect": { "snap_factor": [1, 1.3, 1.6] }
+  }
+}

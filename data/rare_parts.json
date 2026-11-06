@@ -1,0 +1,17 @@
+{
+  "_doc": "Les 12 pièces rares (GDD 04-histoire). how = stars3 (3 étoiles sur la commande n) ou gift (cadeau en terminant la commande n). use = numéro du prototype qui l'exige (0 = collection). Jamais vendues.",
+  "list": [
+    { "id": "brass_gear",      "order": 10, "how": "stars3", "use": 55 },
+    { "id": "gold_wire",       "order": 14, "how": "stars3", "use": 50 },
+    { "id": "dragonfly_wing",  "order": 16, "how": "stars3", "use": 0 },
+    { "id": "crystal_lens",    "order": 23, "how": "stars3", "use": 30 },
+    { "id": "watch_spring",    "order": 25, "how": "stars3", "use": 40 },
+    { "id": "graphite_cell",   "order": 41, "how": "stars3", "use": 0 },
+    { "id": "silver_fork",     "order": 44, "how": "stars3", "use": 50 },
+    { "id": "tiny_key",        "order": 45, "how": "gift", "client": "lea", "use": 0 },
+    { "id": "cut_quartz",      "order": 46, "how": "gift", "client": "quartz", "use": 58 },
+    { "id": "glass_butterfly", "order": 48, "how": "gift", "client": "volute", "use": 0 },
+    { "id": "golden_chip",     "order": 59, "how": "gift", "client": "ampere", "use": 60 },
+    { "id": "medallion",       "order": 60, "how": "gift", "client": "ohm", "use": 0 }
+  ]
+}

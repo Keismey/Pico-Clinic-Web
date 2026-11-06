@@ -1,0 +1,108 @@
+{
+  "_doc": "15 modèles standards + 5 prototypes uniques et le dernier prototype de Maître Ohm (famille proto, GDD 03-patients). look = dessin provisoire ; faults_pool = pannes typiques (Atelier libre et défi du jour ; prototypes seulement au rang 5 de l'atelier libre, jamais le dernier prototype d'Ohm) ; open = clips : élytres à clips au lieu des 4 vis.",
+  "mini_drone": {
+    "id": "mini_drone", "family": "drone", "rank_min": 1, "screws": 4, "trace": "straight",
+    "look": { "shape": "mini", "body": "#3fd0bb", "trim": "#c47a3c", "accent": "#ff8a3d" },
+    "faults_pool": ["connector_unplugged", "rust", "trace_cut", "batteries_low"]
+  },
+  "balcony_drone": {
+    "id": "balcony_drone", "family": "drone", "rank_min": 1, "screws": 4, "trace": "curve",
+    "look": { "shape": "balcony", "body": "#7cc6f2", "trim": "#4a7fb0", "accent": "#ffd166" },
+    "faults_pool": ["chip_burnt", "trace_cut", "sensor"]
+  },
+  "delivery_drone": {
+    "id": "delivery_drone", "family": "drone", "rank_min": 1, "screws": 4, "trace": "straight",
+    "look": { "shape": "delivery", "body": "#f2b134", "trim": "#a8722a", "accent": "#e0453a" },
+    "faults_pool": ["chip_burnt", "trace_cut", "rust", "sensor"], "hidden": true
+  },
+  "racing_drone": {
+    "id": "racing_drone", "family": "drone", "rank_min": 4, "screws": 4, "trace": "wave",
+    "look": { "shape": "race", "body": "#e0453a", "trim": "#1f2937", "accent": "#ffd166" },
+    "faults_pool": ["trace_cut", "chip_burnt", "pin_bent"], "dense": true
+  },
+  "photo_drone": {
+    "id": "photo_drone", "family": "drone", "rank_min": 4, "screws": 4, "trace": "curve",
+    "look": { "shape": "photo", "body": "#e5e7eb", "trim": "#6b7684", "accent": "#3fd0bb" },
+    "faults_pool": ["sensor", "chip_burnt", "oxidized", "batteries_low"], "fragile_plus": true
+  },
+  "dragonfly": {
+    "id": "dragonfly", "family": "insect", "rank_min": 2, "screws": 4, "trace": "curve",
+    "look": { "shape": "dragonfly", "body": "#5fb8e8", "trim": "#2f6f9a", "accent": "#bfe9ff" },
+    "faults_pool": ["trace_cut", "chip_burnt", "rust"]
+  },
+  "beetle": {
+    "id": "beetle", "family": "insect", "rank_min": 2, "screws": 4, "trace": "curve",
+    "look": { "shape": "beetle", "body": "#3a9d6a", "trim": "#1f5e3d", "accent": "#a8e6c1" },
+    "faults_pool": ["battery_swollen", "gear_stuck", "rust"], "open": "clips"
+  },
+  "firefly": {
+    "id": "firefly", "family": "insect", "rank_min": 3, "screws": 4, "trace": "wave",
+    "look": { "shape": "firefly", "body": "#f6d55c", "trim": "#a8822a", "accent": "#fff2b0" },
+    "faults_pool": ["oxidized", "trace_cut", "chip_burnt"]
+  },
+  "bee": {
+    "id": "bee", "family": "insect", "rank_min": 3, "screws": 4, "trace": "curve",
+    "look": { "shape": "bee", "body": "#f2b134", "trim": "#3a2a1e", "accent": "#e8f4ff" },
+    "faults_pool": ["gear_train", "sensor", "rust", "trace_cut"]
+  },
+  "mantis": {
+    "id": "mantis", "family": "insect", "rank_min": 4, "screws": 4, "trace": "wave",
+    "look": { "shape": "mantis", "body": "#8cc63f", "trim": "#4f7a1c", "accent": "#e3f5c8" },
+    "faults_pool": ["pin_bent", "sensor", "trace_cut", "chip_burnt", "batteries_low"]
+  },
+  "plush_robot": {
+    "id": "plush_robot", "family": "mascot", "rank_min": 2, "screws": 4, "trace": "straight",
+    "look": { "shape": "plush", "body": "#f4a6c0", "trim": "#c46a8a", "accent": "#fff0f5" },
+    "faults_pool": ["heart_battery", "seams", "trace_cut", "oxidized"]
+  },
+  "spring_rabbit": {
+    "id": "spring_rabbit", "family": "mascot", "rank_min": 3, "screws": 4, "trace": "curve",
+    "look": { "shape": "rabbit", "body": "#f4efe6", "trim": "#b9a58a", "accent": "#f4a6c0" },
+    "faults_pool": ["spring_loose", "seams", "rust"]
+  },
+  "key_cat": {
+    "id": "key_cat", "family": "mascot", "rank_min": 3, "screws": 4, "trace": "curve",
+    "look": { "shape": "cat", "body": "#f29b4b", "trim": "#a85f22", "accent": "#ffe0c2" },
+    "faults_pool": ["key_mechanism", "gear_stuck", "rust", "trace_cut"]
+  },
+  "music_bear": {
+    "id": "music_bear", "family": "mascot", "rank_min": 4, "screws": 4, "trace": "wave",
+    "look": { "shape": "bear", "body": "#b07d4f", "trim": "#6e4a2a", "accent": "#f2d6b3" },
+    "faults_pool": ["oxidized", "gear_train", "key_mechanism", "sensor", "battery_swollen"]
+  },
+  "solar_hedgehog": {
+    "id": "solar_hedgehog", "family": "mascot", "rank_min": 4, "screws": 4, "trace": "curve",
+    "look": { "shape": "hedgehog", "body": "#9c7c5c", "trim": "#5e4630", "accent": "#5fa8e0" },
+    "faults_pool": ["batteries_low", "rust", "oxidized"]
+  },
+  "jellyfish": {
+    "id": "jellyfish", "family": "proto", "rank_min": 3, "screws": 4, "trace": "wave",
+    "look": { "shape": "jelly", "body": "#b9a3e8", "trim": "#6c4fb0", "accent": "#d9f2ff" },
+    "faults_pool": ["oxidized", "chip_burnt", "trace_cut"]
+  },
+  "paper_bird": {
+    "id": "paper_bird", "family": "proto", "rank_min": 4, "screws": 4, "trace": "curve",
+    "look": { "shape": "paper_bird", "body": "#f7f2e6", "trim": "#b9a58a", "accent": "#ffffff" },
+    "faults_pool": ["spring_loose", "trace_cut", "sensor"]
+  },
+  "dream_box": {
+    "id": "dream_box", "family": "proto", "rank_min": 5, "screws": 4, "trace": "curve",
+    "look": { "shape": "dream_box", "body": "#5b4391", "trim": "#2e2357", "accent": "#ffd166" },
+    "faults_pool": ["sensor", "spring_loose", "key_mechanism", "chip_burnt", "trace_cut"]
+  },
+  "clock_turtle": {
+    "id": "clock_turtle", "family": "proto", "rank_min": 5, "screws": 4, "trace": "wave",
+    "look": { "shape": "turtle", "body": "#7cae6a", "trim": "#3f6b33", "accent": "#e8c48a" },
+    "faults_pool": ["gear_train", "spring_loose", "chip_burnt", "trace_cut"]
+  },
+  "honeycomb": {
+    "id": "honeycomb", "family": "proto", "rank_min": 5, "screws": 4, "trace": "wave",
+    "look": { "shape": "honey", "body": "#f2b134", "trim": "#a8722a", "accent": "#ffe08a" },
+    "faults_pool": ["oxidized", "gear_train", "sensor", "trace_cut"]
+  },
+  "ohm_proto": {
+    "id": "ohm_proto", "family": "proto", "rank_min": 5, "screws": 4, "trace": "wave",
+    "look": { "shape": "ohm", "body": "#e8c48a", "trim": "#a8822a", "accent": "#fff2b0" },
+    "faults_pool": ["connector_unplugged", "chip_burnt", "trace_cut", "battery_swollen", "gear_train", "sensor", "key_mechanism"]
+  }
+}

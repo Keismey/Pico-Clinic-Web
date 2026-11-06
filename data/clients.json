@@ -1,0 +1,15 @@
+{
+  "_doc": "Clients (GDD 02-progression et 04-histoire). arc = nombre de commandes d'histoire prévues ; mood = humeur au comptoir avant la réparation (neutral, sad, stern), thanks_mood = après (happy par défaut) ; color = couleur de l'étiquette du nom. order = ordre d'affichage dans le Carnet. letter = le client n'est plus là, sa lettre est posée sur le comptoir (Maître Ohm, commande 60).",
+  "order": ["lea", "volute", "turbo", "ampere", "brindille", "quartz"],
+  "list": {
+    "lea":       { "arc": 6, "mood": "sad",     "color": "#f2a541" },
+    "volute":    { "arc": 7, "mood": "neutral", "color": "#8e5bb5" },
+    "turbo":     { "arc": 7, "mood": "neutral", "color": "#e0453a" },
+    "ampere":    { "arc": 7, "mood": "neutral", "color": "#c47a3c" },
+    "brindille": { "arc": 7, "mood": "neutral", "color": "#3a8f5a" },
+    "quartz":    { "arc": 5, "mood": "stern",   "color": "#25a08d", "thanks_mood": "neutral" },
+    "passage":   { "arc": 0, "mood": "neutral", "color": "#7a6350" },
+    "gribouille":{ "arc": 0, "mood": "neutral", "color": "#6b7684" },
+    "ohm":       { "arc": 1, "mood": "neutral", "color": "#a8822a", "letter": true }
+  }
+}
